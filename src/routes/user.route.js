@@ -18,7 +18,7 @@ router.post('/register', (req, res) => {
   });
 });
 
-router.post('/login', (req, res) => {
+rrouter.post('/login', (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
@@ -33,5 +33,3 @@ router.post('/login', (req, res) => {
     message: 'Login funcionando'
   });
 });
-
-export default router;
